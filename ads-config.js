@@ -1,4 +1,4 @@
-/**
+﻿/**
  * OmniTools - HilltopAds Comprehensive Integration Configuration
  * Multi-Zone Monetization Engine for Web Utilities
  * 
@@ -32,7 +32,7 @@ const HILLTOPADS_CONFIG = {
         scriptUrl: 'https://scripts.hilltopads.net/ipp-multitag.js?zone=2093812',
         position: 'bottom-right',
         delaySeconds: 2.5,
-        title: '⚡ Developer Productivity Tip',
+        title: 'âš¡ Developer Productivity Tip',
         message: 'Boost your workflow with automated CLI converters & fast cloud API endpoints.',
         ctaText: 'Check Offer',
         enabled: true
@@ -311,7 +311,7 @@ class HilltopAdsManager {
                     <span>Sponsored Stream &bull; Zone ${cfg.zoneId}</span>
                 </div>
                 <div class="vslider-controls">
-                    <button id="vslider-mute-toggle" title="Mute/Unmute" aria-label="Toggle Mute">🔊</button>
+                    <button id="vslider-mute-toggle" title="Mute/Unmute" aria-label="Toggle Mute">ðŸ”Š</button>
                     <button id="vslider-minimize-btn" title="Minimize / Expand" aria-label="Minimize">&minus;</button>
                     <button id="vslider-close-btn" title="Close" aria-label="Close">&times;</button>
                 </div>
@@ -340,7 +340,7 @@ class HilltopAdsManager {
         muteBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             video.muted = !video.muted;
-            muteBtn.textContent = video.muted ? '🔇' : '🔊';
+            muteBtn.textContent = video.muted ? 'ðŸ”‡' : 'ðŸ”Š';
         });
 
         minBtn.addEventListener('click', (e) => {
@@ -520,3 +520,4 @@ class HilltopAdsManager {
 
 // Global Singleton Instance
 window.omniAdsManager = new HilltopAdsManager(HILLTOPADS_CONFIG);
+
